@@ -39,6 +39,7 @@ export const getTodo = async (req, res) => {
 
     return res.status(200).json({
       success: true,
+      message: "All todos received.",
       todos,
     });
   } catch (error) {
